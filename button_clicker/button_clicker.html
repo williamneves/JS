@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/311afd7444.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Lobster&family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="nav-bar">
+            <div class="nav-title">
+                <h1 class="color-accent-3">Dojonary</h1>
+            </div>
+            <div class="search-bar">
+                <input type="search" id="site-search" name="q" aria-label="Search through site content" placeholder="&#xF002; Search" style="font-family:Nunito, FontAwesome">
+            </div>
+            <div class="button-login">
+                <button onclick="onOrOff(this)">LOGIN</button>
+            </div>
+        </div>
+        <div id="main">
+            <div class="content">
+                <div class="post bg-color-white">
+                    <div class="post-col-1">
+                        <div class="word">
+                            <h1>ninja</h1>
+                        </div>
+                        <div class="type">
+                            <h3>noun</h3>
+                        </div>
+                        <div class="plural">
+                            <span>Plural: ninjas</span>
+                        </div>
+                        <div class="like-btn">
+                            <button id="like-btn-js" onclick="alertChangeLike1(this)">24 likes</button>
+                        </div>
+                    </div>
+                    <div class="post-col-2">
+                        <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a>.</p>
+                    </div>
+                </div>
+                <div class="post bg-color-white">
+                    <div class="post-col-1">
+                        <div class="word">
+                            <h1>ninja</h1>
+                        </div>
+                        <div class="type">
+                            <h3>noun</h3>
+                        </div>
+                        <div class="plural">
+                            <span>Plural: ninjas</span>
+                        </div>
+                        <div class="like-btn">
+                            <button id="like-btn-js" onclick="alertChangeLike2(this)">99 likes</button>
+                        </div>
+                    </div>
+                    <div class="post-col-2">
+                        <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a>.</p>
+                    </div>
+                </div>
+                <div class="post bg-color-white">
+                    <div class="post-col-1">
+                        <div class="word">
+                            <h1>ninja</h1>
+                        </div>
+                        <div class="type">
+                            <h3>noun</h3>
+                        </div>
+                        <div class="plural">
+                            <span>Plural: ninjas</span>
+                        </div>
+                        <div class="like-btn">
+                            <button id="like-btn-js" onclick="alertChangeLike3(this)">18 likes</button>
+                        </div>
+                    </div>
+                    <div class="post-col-2">
+                        <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="widget bg-color-white">
+                    <div class="widget-text">
+                        <h3>Dojonary is defined by <b>YOU</b></h3>
+                    </div>
+                    <div class="like-btn">
+                        <button class="bg-color-accent-3 color-primary-dark" onclick="hiddenObj(this)">Add Description</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
