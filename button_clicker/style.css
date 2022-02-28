@@ -72,7 +72,7 @@ a {
     background-color: #393e41fa;
     transition: ease-in-out .3s;
 }
-.button-login button {
+#button-login button {
     margin-right: 50px;
     height: 40px;
     padding: 0 30px;
@@ -85,17 +85,7 @@ a {
     transition: ease-in-out .3s;
     cursor: pointer;
 }
-.button-login button::before{
-    content:"\f007";
-    padding-right:10px;
-    display: inline-block;
-    font-family: FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.button-login button:hover {
+#button-login button:hover {
     height: 40px;
     padding: 0 30px;
     border-radius: 20px;
@@ -106,7 +96,7 @@ a {
     box-shadow: -2px 4px 0 1px #f6f7eb14;
     transition: ease-in-out .3s;
 }
-.button-login button:active {
+#button-login button:active {
     height: 40px;
     padding: 0 30px;
     border-radius: 20px;
