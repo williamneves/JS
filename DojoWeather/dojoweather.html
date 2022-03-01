@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="nav-bar">
+            <div class="nav-title">
+                <h1 class="color-accent-3"><i class="fa-duotone fa-cloud-bolt-sun"></i> DojoWeather</h1>
+            </div>
+            <div class="cities color-primary" onclick="displayAlert()">
+                <ul>
+                    <li>Miami</li>
+                    <li>Margate</li>
+                    <li>Boca Raton</li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <div id="city-temp">
+                <h1 class="city-name"><i class="fa-solid fa-location-dot"></i></i> Miami, FL</h1>
+                <form>
+                    <label for="CorF">show temperature in</label>
+                    <select name="CorF" id="CorF" onchange="celciusToF()" >
+                        <option value="C">C</option>
+                        <option value="F">F</option>
+                    </select>
+                </form>
+            </div>
+            <div id="days-weather">
+                <div class="days">
+                    <h2>Today</h2>
+                    <div class="weather-img">
+                        <i class="fa-solid fa-cloud-rain"></i>
+                    </div>
+                    <h3>some rain</h3>
+                    <div class="temp-value">
+                        <span class="max-temp">24</span>
+                        <span class="min-temp">18</span>
+                    </div>
+                </div>
+                <div class="days">
+                    <h2>Tomorrow</h2>
+                    <div class="weather-img">
+                        <i class="fa-solid fa-sun-cloud"></i>
+                    </div>
+                    <h3>some sun</h3>
+                    <div class="temp-value">
+                        <span class="max-temp">27</span>
+                        <span class="min-temp">19</span>
+                    </div>
+                </div>
+                <div class="days">
+                    <h2>Friday</h2>
+                    <div class="weather-img">
+                        <i class="fa-solid fa-cloud-fog"></i>
+                    </div>
+                    <h3>some clouds</h3>
+                    <div class="temp-value">
+                        <span class="max-temp">21</span>
+                        <span class="min-temp">16</span>
+                    </div>
+                </div>
+                <div class="days">
+                    <h2>Saturday</h2>
+                    <div class="weather-img">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <h3>mostly sun</h3>
+                    <div class="temp-value">
+                        <span id='abcd' class="max-temp">31</span>
+                        <span class="min-temp">21</span>
+                    </div>
+                </div>
+            </div>
+            <div id="cookies-pop">
+                <i class="fa-solid fa-cookie-bite"></i>
+                <div class="cookie-pop">
+                    <h2>Stop! Cookie Time</h2>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+                </div>
+                <button class="bg-color-accent-1" onclick="hiddenCookies()">I Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/311afd7444.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
