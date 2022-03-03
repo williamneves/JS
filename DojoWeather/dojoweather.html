@@ -25,10 +25,10 @@
         </div>
         <div id="main">
             <div id="city-temp">
-                <h1 class="city-name"><i class="fa-solid fa-location-dot"></i></i> Miami, FL</h1>
+                <h1 class="city-name"><i class="fa-solid fa-location-dot"></i></i> Parkland, FL</h1>
                 <form>
                     <label for="CorF">show temperature in</label>
-                    <select name="CorF" id="CorF" onchange="celciusToF()" >
+                    <select name="CorF" id="CorF" onchange="getWeatherData()" >
                         <option value="C">C</option>
                         <option value="F">F</option>
                     </select>
@@ -42,8 +42,9 @@
                     </div>
                     <h3>some rain</h3>
                     <div class="temp-value">
-                        <span class="max-temp">24</span>
-                        <span class="min-temp">18</span>
+                        <span class="max-temp today-max">-</span>
+                        <span class="max-temp today-curr">-</span>
+                        <span class="min-temp today-min">-</span>
                     </div>
                 </div>
                 <div class="days">
@@ -53,8 +54,8 @@
                     </div>
                     <h3>some sun</h3>
                     <div class="temp-value">
-                        <span class="max-temp">27</span>
-                        <span class="min-temp">19</span>
+                        <span class="max-temp day1-max">-</span>
+                        <span class="min-temp day1-min">-</span>
                     </div>
                 </div>
                 <div class="days">
@@ -64,19 +65,8 @@
                     </div>
                     <h3>some clouds</h3>
                     <div class="temp-value">
-                        <span class="max-temp">21</span>
-                        <span class="min-temp">16</span>
-                    </div>
-                </div>
-                <div class="days">
-                    <h2>Saturday</h2>
-                    <div class="weather-img">
-                        <i class="fa-solid fa-sun"></i>
-                    </div>
-                    <h3>mostly sun</h3>
-                    <div class="temp-value">
-                        <span id='abcd' class="max-temp">31</span>
-                        <span class="min-temp">21</span>
+                        <span class="max-temp day2-max">-</span>
+                        <span class="min-temp day2-min">-</span>
                     </div>
                 </div>
             </div>
